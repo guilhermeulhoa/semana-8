@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link id="pagestyle" rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.pink-deep_purple.min.css" />
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <link rel="shortcut icon" href="https://www.flaticon.com/svg/vstatic/svg/167/167755.svg?token=exp=1614368718~hmac=fac3ef09e930779615d5a4bbf66fd59f" type="image/x-icon">
+    <title>teste google</title>
+    <style>
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif,
+        }
+
+        .demo-card-wide {
+            padding: 5px;
+            margin: 5px;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .demo-card-wide:hover {
+            background-color: rgb(221, 221, 220);
+            color: black;
+        }
+
+        .mdl-card__title {
+            width: 500px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 1.2em;
+        }
+
+        .link {
+            padding: 10px;
+            text-decoration: none;
+            color: black;
+        }
+
+        .link:hover {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+ <div class="mdl-layout mdl-js-layout">
+ <header class="mdl-layout__header mdl-layout__header--scroll">
+ <div class="mdl-layout__header-row">
+ <a href="index.html">
+ <img style="cursor: pointer;"
+   src="https://www.flaticon.com/svg/vstatic/svg/167/167755.svg?token=exp=1614368718~hmac=fac3ef09e930779615d5a4bbf66fd59f" width="60">
+ </a>
+ <div class="mdl-layout-spacer" style="margin-left: 100px;">
+   <form action="#">
+ <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label"
+   style="display: flex; width: 500px;">
+ <select id="selec" class="mdl-textfield__input" style="color: black;">
+ <option value="search" selected>Busca Geral</option>
+ <option value="intitle">Busca Por Nome</option>
+  <option value="inauthor">Busca por Autor</option>
+  <option value="Titulo">Busca Por Título</option>
+ <option value="inpublisher">Busca por Publicadora</option>
+  <option value="subject">Lista do Volume</option>
+ <option value="isbn">Busca Por ISBN</option>
+  <option value="lccn">Busca Por LCCN</option>
+  <option value="oclc">Busca Por OCLC</option>
+ </select>
+ <input class="mdl-textfield__input" style="color: black;" type="text" id="Input">
+ <label class="mdl-textfield__label">Digite o Conteúdo...</label>
+  <span class="material-icons" style="cursor: pointer; color: black;" onclick="loadlivros()"
+ id="srcbtn">
+     search
+ </span></a>
+  </div>
+ </form>
+ </div>
+ </div>
+ </header>
+ <div id="conteudo" style="display: flex; flex-wrap: wrap; margin-bottom: 100px;"></div>
+ <footer class="mdl-mini-footer" style="z-index: 1000;position: fixed; bottom: 0; width: 100%; display:inline">
+  <div>
+ <div class="mdl-mini-footer__left-section">
+  <ul class="mdl-mini-footer__link-list" style="width: 100%;">
+ </ul>
+ </div>
+ </footer>
+ </div>
+<script src="js.js"></script>
+</body>
+
+</html
